@@ -1,0 +1,5 @@
+bitsandbytes
+evaluate
+sacrebleu
+unbabel-comet
+tqdm
