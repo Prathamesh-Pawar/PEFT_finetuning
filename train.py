@@ -1,6 +1,6 @@
 import os
 import torch
-from datasets import load_dataset,load_from_disk
+from datasets import load_from_disk
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
@@ -17,11 +17,11 @@ from peft import (
 # 1. Environment setup
 # -----------------------------------------------------------------------------
 
-os.environ["WANDB_API_KEY"] = "423405722831be2e96dd472655828b1ef9978bc9"
+os.environ["WANDB_API_KEY"] = "API_KEY"
 
 from huggingface_hub import login
-login(new_session=False)
 
+login(token="API_KEY")
 # Optional bitsandbytes optimizer
 try:
     import bitsandbytes as bnb

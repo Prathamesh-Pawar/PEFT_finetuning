@@ -1,9 +1,13 @@
 import os
 import random
-from datasets import load_dataset,load_from_disk
+from datasets import load_dataset
 
-from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+from transformers import AutoTokenizer
 
+
+from huggingface_hub import login
+
+login(token="API_KEY")
 # ----------------------------------------------------------
 # 1. Load tokenizer + dataset
 # ----------------------------------------------------------
